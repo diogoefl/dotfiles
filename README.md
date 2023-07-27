@@ -1,2 +1,3 @@
 # dotfiles
-Personal dotfiles and configurations focused on OpenBSD-current
+
+These are personal dotfiles and configurations focused on OpenBSD-current.
