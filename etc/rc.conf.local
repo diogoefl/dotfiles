@@ -1,0 +1,4 @@
+apmd_flags=-H
+pkg_scripts=obsdfreqd
+sndiod_flags=-f rsnd/1
+sshd_flags=NO
