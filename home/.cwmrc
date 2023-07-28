@@ -1,0 +1,12 @@
+bind-key CMS-r     restart
+bind-key C4-minus  window-vtile
+bind-key C4-plus   window-htile
+
+borderwidth        4
+snapdist           25
+gap                10 10 10 10
+sticky             yes
+fontname           "noto-sans:pixelsize=16:medium"
+
+command            firefox           /usr/local/bin/firefox
+command            terminal          /usr/local/bin/xterm
