@@ -1,0 +1,16 @@
+# Attach RAID1 crypto disk to system
+# RAID1 disk:     sd2 (DUID sd2) - slice a
+#                 sd3 (DUID sd3) - slice a
+# RAID1 endpoint: sd6 (DUID sd6) - slice l - mountpoint /home
+# RAID1 keyfile:  /etc/keyfiles/crypto/home.key
+
+DC1_FST="(DUID sd2).a"
+DC1_SND="(DUID sd3).a"
+DC1_END="(DUID sd6).l"
+DC1_KEY="/etc/keyfiles/crypto/home.key"
+DC1_MNT="/home"
+
+echo "rc.securelevel: attaching RAID1 crypto disk"
+bioctl -c 1C -l $DC1_FST,$DC1_SND -p $DC1_KEY softraid0
+fsck -y $DC1_END
+mount $DC1_MNT
