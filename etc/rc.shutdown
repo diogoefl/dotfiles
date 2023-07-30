@@ -1,0 +1,7 @@
+# Dettach RAID1 crypto disk to system
+# RAID1 endpoint: sd6 (DUID sd6) - slice l - mountpoint /home
+DC1_END="(DUID sd6)"
+DC1_MNT="/home"
+echo "rc.shutdown: dettaching RAID1 crypto disk"
+umount -f $DC1_MNT
+bioctl -d $DC1_END
