@@ -1,0 +1,32 @@
+SD2 SCSI DISK - 2Tb - main RAID1 disk
+   a:  1862.8G    RAID
+   c:  1863.0G  unused
+   i:     0.3G   MSDOS
+
+SD3 SCSI DISK - 2Tb - mirror RAID1 disk
+   a:  1862.8G    RAID
+   c:  1863.0G  unused
+   i:     0.3G   MSDOS
+
+SD4 SSD NVME Disk - 475G
+   a:  476.7G     RAID
+   c:  476.9G   unused
+   i:    0.3G    MSDOS
+
+SD6 CRYPTO DISK - 475G
+   a:  12.0G   4.2BSD # /
+   b:  20.0G     swap # none
+   c: 476.7G   unused
+   d:  32.0G   4.2BSD # /tmp
+   e:  48.0G   4.2BSD # /var
+   f:  75.0G   4.2BSD # /usr
+   g:   2.0G   4.2BSD # /usr/X11R6
+   h: 191.4G   4.2BSD # /usr/local
+   i:   0.3G    MSDOS
+   j:  32.0G   4.2BSD # /usr/src
+   k:  64.0G   4.2BSD # /usr/obj
+
+SD7 RAID1 CRYPTO DISK - 2Tb
+   c:  1862.8G  unused
+   i:     0.3G   MSDOS
+   l:  1862.5G  4.2BSD # /home
