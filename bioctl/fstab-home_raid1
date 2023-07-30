@@ -1,0 +1,5 @@
+# This is RAID1 crypto disk attached at rc.securelevel
+# Disabling autofsck for normal boot and also making
+# it noauto to let rc.securelevel mount this later
+
+(DUID).l /home ffs rw,nodev,nosuid,noauto 1 0
